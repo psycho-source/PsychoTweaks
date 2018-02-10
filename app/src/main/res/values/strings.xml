@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Psycho Tweaks</string>
+    <string name="theme">UI Theme</string>
+    <string name="display">Display</string>
+    <string name="buttons">Buttons</string>
+    <string name="transition_dialog">transition_dialog</string>
+    <string name="theme_black">Black Theme</string>
+    <string name="theme_dark">Dark Theme</string>
+    <string name="theme_stock">Stock Theme</string>
+    <string name="theme_psycho">Psycho Theme</string>
+    <string name="theme_black_desc">For Your AMOLED Screens</string>
+    <string name="theme_dark_desc">For Dark UI Lovers</string>
+    <string name="theme_stock_desc">Suitable for use with Substratum Themes</string>
+    <string name="theme_psycho_desc">The Default Psycho Theme</string>
+</resources>
