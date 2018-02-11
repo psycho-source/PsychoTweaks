@@ -8,7 +8,6 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.annotation.NonNull;
-import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -101,7 +100,7 @@ public class theme extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.theme);
 
-        final ConstraintLayout cl = (ConstraintLayout) findViewById(R.id.container);
+        final RelativeLayout cl = (RelativeLayout) findViewById(R.id.container);
         ImageView init = (ImageView) findViewById(R.id.bg);
         init.setImageResource(R.drawable.ic_ui_stock);
         TextView InitText = (TextView) findViewById(R.id.head);

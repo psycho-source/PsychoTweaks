@@ -74,7 +74,7 @@ public class Main extends AppCompatActivity {
         card2.setOnClickListener(new OnClickListener() {
             public void onClick(View arg0) {
                 Intent myIntent = new Intent(Main.this,
-                        Display.class);
+                        theme.class);
                 startActivity(myIntent);
             }
         });
@@ -83,7 +83,7 @@ public class Main extends AppCompatActivity {
         card3.setOnClickListener(new OnClickListener() {
             public void onClick(View arg0) {
                 Intent myIntent = new Intent(Main.this,
-                        Buttons.class);
+                        theme.class);
                 startActivity(myIntent);
             }
         });

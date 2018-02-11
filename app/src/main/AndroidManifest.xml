@@ -30,7 +30,6 @@
             android:name=".Display"
             android:label="@string/display"
             android:theme="@style/AppTheme" />
-        <activity android:name=".Buttons" />
     </application>
 
 </manifest>
