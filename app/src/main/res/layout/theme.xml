@@ -5,7 +5,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.psycho.theme">
+    tools:context="com.psycho.com.android.settings.theme">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar4"
@@ -59,50 +59,51 @@
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginTop="@dimen/activity_vertical_margin" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/Secd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="?android:colorAccent"
-        android:clickable="true"
-        android:focusable="true"
-        android:src="@drawable/ic_pallete"
-        android:tint="@android:color/white"
-        android:layout_above="@id/navigation"
-        android:layout_toStartOf="@id/ref"
-        android:layout_marginEnd="16dp"/>
-
-    <RelativeLayout
-        android:id="@+id/ref"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@id/navigation"/>
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/apply"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_theme_apply"
-        android:layout_marginBottom="8dp"
-        android:background="?android:colorAccent"
-        android:clickable="true"
-        android:focusable="true"
-        android:tint="@android:color/white"
-        android:layout_above="@id/navigation"
-        android:layout_toEndOf="@id/ref"
-        android:layout_marginStart="16dp"/>
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_marginEnd="0dp"
         android:layout_marginStart="0dp"
         android:background="?android:attr/windowBackground"
         app:itemTextColor="@color/bnv_tab_item_foreground"
-        android:layout_alignParentBottom="true"
         app:menu="@menu/navigation" />
+
+    <RelativeLayout
+        android:id="@+id/ref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/navigation"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/Secd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/navigation"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@id/ref"
+        android:background="?android:colorAccent"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_pallete"
+        android:tint="@android:color/white" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/navigation"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/ref"
+        android:background="?android:colorAccent"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_theme_apply"
+        android:tint="@android:color/white" />
 
 </RelativeLayout>

@@ -14,8 +14,6 @@ import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import java.util.Timer;
-
 public class Main extends AppCompatActivity {
 
     CardView card1, card2, card3;
