@@ -39,16 +39,13 @@ public class Main extends AppCompatActivity {
         egg.setOnClickListener(new OnClickListener() {
             public void onClick(View view) {
                 east++;
-                if (east==10)
-                {
+                if (east == 10) {
                     Toast.makeText(Main.this, "Hold On, You Will Break Things...", Toast.LENGTH_SHORT).show();
                 }
-                if (east==20)
-                {
+                if (east == 20) {
                     Toast.makeText(Main.this, "Stop It", Toast.LENGTH_SHORT).show();
                 }
-                if (east==30)
-                {
+                if (east == 30) {
                     egg.setBackgroundResource(R.drawable.android_gradient_list);
                     AnimationDrawable animationDrawable = (AnimationDrawable) egg.getBackground();
                     animationDrawable.setEnterFadeDuration(2000);

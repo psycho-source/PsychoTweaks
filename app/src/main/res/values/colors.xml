@@ -22,4 +22,5 @@
     <color name="text_main_stock">#212121</color>
     <color name="text_sub">#757575</color>
     <color name="text_main_dark">#FFFFFF</color>
+    <color name="trans">#00FFFFFF</color>
 </resources>

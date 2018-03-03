@@ -41,8 +41,8 @@ public class accent extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                //  Settings.Secure.putInt(accent.this.getContentResolver(),
-                //          Settings.Secure.THEME_ACCENT_COLOR, 0);
+                //Settings.Secure.putInt(accent.this.getContentResolver(),
+                //      Settings.Secure.THEME_ACCENT_COLOR, 0);
                 Toast.makeText(accent.this, "Teal Selected", Toast.LENGTH_SHORT).show();
 
             }
@@ -52,8 +52,8 @@ public class accent extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                // Settings.Secure.putInt(accent.this.getContentResolver(),
-                //         Settings.Secure.THEME_ACCENT_COLOR, 1);
+                //Settings.Secure.putInt(accent.this.getContentResolver(),
+                //       Settings.Secure.THEME_ACCENT_COLOR, 1);
                 Toast.makeText(accent.this, "BlueSelected", Toast.LENGTH_SHORT).show();
 
             }
@@ -63,8 +63,8 @@ public class accent extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                // Settings.Secure.putInt(accent.this.getContentResolver(),
-                //         Settings.Secure.THEME_ACCENT_COLOR, 2);
+                //Settings.Secure.putInt(accent.this.getContentResolver(),
+                //       Settings.Secure.THEME_ACCENT_COLOR, 2);
                 Toast.makeText(accent.this, "Red Selected", Toast.LENGTH_SHORT).show();
 
             }
@@ -74,8 +74,8 @@ public class accent extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                // Settings.Secure.putInt(accent.this.getContentResolver(),
-                //         Settings.Secure.THEME_ACCENT_COLOR, 3);
+                //Settings.Secure.putInt(accent.this.getContentResolver(),
+                //       Settings.Secure.THEME_ACCENT_COLOR, 3);
                 Toast.makeText(accent.this, "Orange Selected", Toast.LENGTH_SHORT).show();
 
             }
@@ -85,8 +85,8 @@ public class accent extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                // Settings.Secure.putInt(accent.this.getContentResolver(),
-                //         Settings.Secure.THEME_ACCENT_COLOR, 4);
+                //Settings.Secure.putInt(accent.this.getContentResolver(),
+                //       Settings.Secure.THEME_ACCENT_COLOR, 4);
                 Toast.makeText(accent.this, "Green Selected", Toast.LENGTH_SHORT).show();
 
             }
@@ -97,7 +97,7 @@ public class accent extends AppCompatActivity {
             public void onClick(View view) {
 
                 // Settings.Secure.putInt(accent.this.getContentResolver(),
-                //         Settings.Secure.THEME_ACCENT_COLOR, 5);
+                //        Settings.Secure.THEME_ACCENT_COLOR, 5);
                 Toast.makeText(accent.this, "Yellow Selected", Toast.LENGTH_SHORT).show();
 
             }
@@ -107,8 +107,8 @@ public class accent extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                // Settings.Secure.putInt(accent.this.getContentResolver(),
-                //         Settings.Secure.THEME_ACCENT_COLOR, 6);
+                //Settings.Secure.putInt(accent.this.getContentResolver(),
+                //       Settings.Secure.THEME_ACCENT_COLOR, 6);
                 Toast.makeText(accent.this, "Purple Selected", Toast.LENGTH_SHORT).show();
 
             }
@@ -118,8 +118,8 @@ public class accent extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                // Settings.Secure.putInt(accent.this.getContentResolver(),
-                //         Settings.Secure.THEME_ACCENT_COLOR, 7);
+                //Settings.Secure.putInt(accent.this.getContentResolver(),
+                //        Settings.Secure.THEME_ACCENT_COLOR, 7);
                 Toast.makeText(accent.this, "Pink Selected", Toast.LENGTH_SHORT).show();
 
             }
@@ -130,7 +130,7 @@ public class accent extends AppCompatActivity {
             public void onClick(View view) {
 
                 //Settings.Secure.putInt(accent.this.getContentResolver(),
-                //        Settings.Secure.THEME_ACCENT_COLOR, 8);
+                //       Settings.Secure.THEME_ACCENT_COLOR, 8);
                 Toast.makeText(accent.this, "Cyan Selected", Toast.LENGTH_SHORT).show();
 
             }
@@ -141,7 +141,7 @@ public class accent extends AppCompatActivity {
             public void onClick(View view) {
 
                 //Settings.Secure.putInt(accent.this.getContentResolver(),
-                //       Settings.Secure.THEME_ACCENT_COLOR, 9);
+                //      Settings.Secure.THEME_ACCENT_COLOR, 9);
                 Toast.makeText(accent.this, "Grey Selected", Toast.LENGTH_SHORT).show();
 
             }

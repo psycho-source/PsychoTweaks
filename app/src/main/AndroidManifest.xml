@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.psycho" >
+    package="com.psycho">
 
     <uses-permission android:name="android.permission.SET_ANIMATION_SCALE" />
     <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
@@ -11,7 +11,9 @@
     <uses-permission android:name="android.permission.READ_SECURE_SETTINGS" />
     <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
     <uses-permission android:name="android.permission.CONTROL_INCALL_EXPERIENCE" />
-    <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" android:protectionLevel="signatureOrSystem" />
+    <uses-permission
+        android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"
+        android:protectionLevel="signatureOrSystem" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
     <uses-permission android:name="android.permission.DEVICE_POWER" />
@@ -21,8 +23,8 @@
     <uses-permission android:name="android.permission.USE_FINGERPRINT" />
 
     <uses-permission android:name="cyanogenmod.permission.MANAGE_REMOTE_PREFERENCES" />
-    <uses-permission android:name="cyanogenmod.permission.WRITE_SETTINGS"/>
-    <uses-permission android:name="cyanogenmod.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="cyanogenmod.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="cyanogenmod.permission.WRITE_SECURE_SETTINGS" />
 
     <protected-broadcast android:name="android.intent.action.UPDATE_POWER_MENU" />
     <protected-broadcast android:name="cyanogenmod.platform.app.profiles.PROFILES_STATE_CHANGED" />
