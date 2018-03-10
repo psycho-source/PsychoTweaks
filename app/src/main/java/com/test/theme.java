@@ -1,4 +1,4 @@
-package com.psycho;
+package com.test;
 
 import android.app.ActivityOptions;
 import android.content.Context;

@@ -3,6 +3,8 @@
     <string name="theme">UI Theme</string>
     <string name="display">Display</string>
     <string name="buttons">Buttons</string>
+    <string name="status">Status Bar</string>
+    <string name="about">About</string>
     <string name="transition_dialog">transition_dialog</string>
     <string name="theme_black">Black Theme</string>
     <string name="theme_dark">Dark Theme</string>

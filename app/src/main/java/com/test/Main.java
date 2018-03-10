@@ -1,5 +1,6 @@
-package com.psycho;
+package com.test;
 
+import android.content.ComponentName;
 import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.AnimationDrawable;
@@ -8,6 +9,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -16,7 +19,7 @@ import android.widget.Toast;
 
 public class Main extends AppCompatActivity {
 
-    CardView card1, card2, card3;
+    CardView card1, card2, card3, card4;
     int east;
 
     @Override
@@ -69,7 +72,7 @@ public class Main extends AppCompatActivity {
         card2.setOnClickListener(new OnClickListener() {
             public void onClick(View arg0) {
                 Intent myIntent = new Intent(Main.this,
-                        theme.class);
+                        display.class);
                 startActivity(myIntent);
             }
         });
@@ -78,17 +81,39 @@ public class Main extends AppCompatActivity {
         card3.setOnClickListener(new OnClickListener() {
             public void onClick(View arg0) {
                 Intent myIntent = new Intent(Main.this,
-                        theme.class);
+                        status.class);
                 startActivity(myIntent);
+            }
+        });
+
+        card4 = (CardView) findViewById(R.id.card4);
+        card4.setOnClickListener(new OnClickListener() {
+            public void onClick(View arg0) {
+                final Intent intent = new Intent(Intent.ACTION_MAIN, null);
+                intent.addCategory(Intent.CATEGORY_LAUNCHER);
+                final ComponentName cn = new ComponentName("org.cyanogenmod.cmparts", "org.cyanogenmod.cmparts.input.ButtonSettings");
+                intent.setComponent(cn);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
             }
         });
     }
 
+    /*@Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu, menu);
+        return true;
+    }*/
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
-            finish();
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
-        return super.onOptionsItemSelected(item);
     }
 }

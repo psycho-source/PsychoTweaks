@@ -1,4 +1,4 @@
-package com.psycho;
+package com.test;
 
 import android.animation.Animator;
 import android.animation.AnimatorSet;

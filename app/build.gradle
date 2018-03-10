@@ -4,7 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "26.0.1"
     defaultConfig {
-        applicationId "com.psycho"
+        applicationId "com.test"
         minSdkVersion 25
         targetSdkVersion 25
         versionCode 1
