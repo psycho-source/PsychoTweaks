@@ -1,10 +1,12 @@
 package com.test;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.transition.ArcMotion;
+import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
@@ -15,6 +17,14 @@ import android.widget.Toast;
 public class accent extends AppCompatActivity {
 
     private ViewGroup container;
+
+    private static int getThemeAccentColor(Context context) {
+        int colorAttr;
+        colorAttr = android.R.attr.colorAccent;
+        TypedValue outValue = new TypedValue();
+        context.getTheme().resolveAttribute(colorAttr, outValue, true);
+        return outValue.data;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -187,13 +197,13 @@ public class accent extends AppCompatActivity {
         Interpolator easeInOut = AnimationUtils.loadInterpolator(this, android.R.interpolator.fast_out_slow_in);
 
         //hujiawei 100是随意给的一个数字，可以修改，需要注意的是这里调用container.getHeight()结果为0
-        MorphTransition sharedEnter = new MorphTransition(ContextCompat.getColor(this, R.color.colorAccent),
+        MorphTransition sharedEnter = new MorphTransition(ContextCompat.getColor(this, getThemeAccentColor(this)),
                 ContextCompat.getColor(this, R.color.dialog_background_color), 100, getResources().getDimensionPixelSize(R.dimen.dialog_corners), true);
         sharedEnter.setPathMotion(arcMotion);
         sharedEnter.setInterpolator(easeInOut);
 
         MorphTransition sharedReturn = new MorphTransition(ContextCompat.getColor(this, R.color.dialog_background_color),
-                ContextCompat.getColor(this, R.color.colorAccent), getResources().getDimensionPixelSize(R.dimen.dialog_corners), 100, false);
+                ContextCompat.getColor(this, getThemeAccentColor(this)), getResources().getDimensionPixelSize(R.dimen.dialog_corners), 100, false);
         sharedReturn.setPathMotion(arcMotion);
         sharedReturn.setInterpolator(easeInOut);
 

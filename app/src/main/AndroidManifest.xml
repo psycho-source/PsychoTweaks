@@ -47,10 +47,13 @@
             android:theme="@style/AppTheme.Dialog" />
         <activity
             android:name=".theme"
-            android:label="@string/theme"
-            android:theme="@style/AppTheme" />
-        <activity android:name=".display" />
-        <activity android:name=".status" />
+            android:label="@string/theme" />
+        <activity
+            android:name=".display"
+            android:label="@string/display" />
+        <activity
+            android:name=".status"
+            android:label="@string/status" />
     </application>
 
 </manifest>

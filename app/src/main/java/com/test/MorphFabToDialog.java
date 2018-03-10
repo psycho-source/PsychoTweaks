@@ -62,7 +62,7 @@ public class MorphFabToDialog extends ChangeBounds {
         if (view.getWidth() <= 0 || view.getHeight() <= 0) {
             return;
         }
-        transitionValues.values.put(PROPERTY_COLOR, ContextCompat.getColor(view.getContext(), R.color.fab_background_color));
+        transitionValues.values.put(PROPERTY_COLOR, ContextCompat.getColor(view.getContext(), R.color.trans));
         transitionValues.values.put(PROPERTY_CORNER_RADIUS, view.getHeight() / 2);//view.getHeight() / 2
     }
 
@@ -96,8 +96,8 @@ public class MorphFabToDialog extends ChangeBounds {
         MorphDrawable background = new MorphDrawable(startColor, startCornerRadius);
         endValues.view.setBackground(background);
 
-        Animator color = ObjectAnimator.ofArgb(background, background.COLOR, endColor);
-        Animator corners = ObjectAnimator.ofFloat(background, background.CORNER_RADIUS, endCornerRadius);
+        Animator color = ObjectAnimator.ofArgb(background, MorphDrawable.COLOR, endColor);
+        Animator corners = ObjectAnimator.ofFloat(background, MorphDrawable.CORNER_RADIUS, endCornerRadius);
 
         // ease in the dialog's child views (slide up & fade in)
         if (endValues.view instanceof ViewGroup) {

@@ -140,7 +140,7 @@ public class theme extends AppCompatActivity {
                 psycho.setImageResource(R.drawable.ic_ui);
                 TextView Title2 = (TextView) findViewById(R.id.head);
                 Title2.setText(R.string.theme_psycho);
-                Title2.setTextColor(getThemeAccentColor(theme.this));
+                Title2.setTextColor(getThemeAccentColor(this));
                 TextView Sub2 = (TextView) findViewById(R.id.sub);
                 Sub2.setText(R.string.theme_psycho_desc);
                 Sub2.setTextColor(getResources().getColor(R.color.text_sub));
@@ -180,7 +180,7 @@ public class theme extends AppCompatActivity {
         setSupportActionBar(toolbar1);
         if (getSupportActionBar() != null) {
             final Drawable upArrow = getResources().getDrawable(R.drawable.ic_arrow_back);
-            upArrow.setColorFilter(getResources().getColor(R.color.colorAccent), PorterDuff.Mode.SRC_ATOP);
+            upArrow.setColorFilter(getThemeAccentColor(this), PorterDuff.Mode.SRC_ATOP);
             getSupportActionBar().setHomeAsUpIndicator(upArrow);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);

@@ -1,6 +1,7 @@
 package com.test;
 
 import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.AnimationDrawable;
@@ -9,8 +10,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuInflater;
+import android.util.TypedValue;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -22,6 +22,14 @@ public class Main extends AppCompatActivity {
     CardView card1, card2, card3, card4;
     int east;
 
+    private static int getThemeAccentColor(Context context) {
+        int colorAttr;
+        colorAttr = android.R.attr.colorAccent;
+        TypedValue outValue = new TypedValue();
+        context.getTheme().resolveAttribute(colorAttr, outValue, true);
+        return outValue.data;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +40,7 @@ public class Main extends AppCompatActivity {
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
             final Drawable upArrow = getResources().getDrawable(R.drawable.ic_arrow_back);
-            upArrow.setColorFilter(getResources().getColor(R.color.colorAccent), PorterDuff.Mode.SRC_ATOP);
+            upArrow.setColorFilter(getThemeAccentColor(Main.this), PorterDuff.Mode.SRC_ATOP);
             getSupportActionBar().setHomeAsUpIndicator(upArrow);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);

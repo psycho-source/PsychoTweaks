@@ -1,15 +1,25 @@
 package com.test;
 
+import android.content.Context;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.TypedValue;
 import android.view.MenuItem;
 
 import com.test.fragments.DisplayFragment;
 
 public class display extends AppCompatActivity {
+
+    private static int getThemeAccentColor(Context context) {
+        int colorAttr;
+        colorAttr = android.R.attr.colorAccent;
+        TypedValue outValue = new TypedValue();
+        context.getTheme().resolveAttribute(colorAttr, outValue, true);
+        return outValue.data;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +31,7 @@ public class display extends AppCompatActivity {
         setSupportActionBar(toolbar5);
         if (getSupportActionBar() != null) {
             final Drawable upArrow = getResources().getDrawable(R.drawable.ic_arrow_back);
-            upArrow.setColorFilter(getResources().getColor(R.color.colorAccent), PorterDuff.Mode.SRC_ATOP);
+            upArrow.setColorFilter(getThemeAccentColor(this), PorterDuff.Mode.SRC_ATOP);
             getSupportActionBar().setHomeAsUpIndicator(upArrow);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
