@@ -20,7 +20,6 @@
         app:titleTextColor="?android:colorAccent" />
 
     <RelativeLayout
-        android:id="@+id/cont"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/toolbar">
@@ -102,7 +101,7 @@
                         android:scaleType="fitCenter"
                         android:scaleX="1.6"
                         android:scaleY="1.6"
-                        android:src="@drawable/ic_status"
+                        android:src="@drawable/ic_display"
                         android:tint="#2196F3"
                         tools:ignore="ContentDescription" />
 
