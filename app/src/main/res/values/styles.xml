@@ -1,18 +1,43 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="stock_theme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
+        <item name="android:statusBarColor">@android:color/black</item>
     </style>
 
-    <style name="AppTheme.Dialog" parent="AppTheme">
+    <style name="stock_theme.Dialog" parent="stock_theme">
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowBackground">@color/dialog_background_scrim</item>
         <!--<item name="android:windowAnimationStyle">@null</item>-->
         <!--<item name="android:windowContentTransitions">true</item>-->
     </style>
 
-    <style name="PixelTheme">
+    <style name="dark_theme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:statusBarColor">@android:color/black</item>
+    </style>
+
+    <style name="dark_theme.Dialog" parent="dark_theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/dialog_background_scrim</item>
+        <!--<item name="android:windowAnimationStyle">@null</item>-->
+        <!--<item name="android:windowContentTransitions">true</item>-->
+    </style>
+
+    <style name="black_theme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:statusBarColor">@android:color/black</item>
+    </style>
+
+    <style name="black_theme.Dialog" parent="black_theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/dialog_background_scrim</item>
+        <!--<item name="android:windowAnimationStyle">@null</item>-->
+        <!--<item name="android:windowContentTransitions">true</item>-->
+    </style>
+
+    <style name="pixel_theme">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>

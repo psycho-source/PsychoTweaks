@@ -3,7 +3,9 @@
     <color name="colorPrimary">#F5F5F5</color>
     <color name="colorPrimaryDark">#e0e0e0</color>
     <color name="colorAccent">#2196F3</color>
+    <color name="colorStock">#212121</color>
     <color name="dialog_background_color">#fafafa</color>
+    <color name="dialog_background_color_dark">#303030</color>
     <color name="dialog_background_scrim">#99323232</color>
     <color name="teal_accent_color">#009688</color>
     <color name="blue_accent_color">#4285F4</color>
