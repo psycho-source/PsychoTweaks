@@ -37,6 +37,7 @@ public class Main extends AppCompatActivity {
         setContentView(R.layout.main);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setBackgroundColor(getResources().getColor(R.color.black));
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
             final Drawable upArrow = getResources().getDrawable(R.drawable.ic_arrow_back);

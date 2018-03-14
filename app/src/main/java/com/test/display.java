@@ -27,6 +27,7 @@ public class display extends AppCompatActivity {
         setContentView(R.layout.frags);
 
         Toolbar toolbar5 = (Toolbar) findViewById(R.id.toolbar5);
+        toolbar5.setBackgroundColor(getResources().getColor(R.color.black));
         toolbar5.setTitle(R.string.display);
         setSupportActionBar(toolbar5);
         if (getSupportActionBar() != null) {

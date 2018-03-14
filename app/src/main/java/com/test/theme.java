@@ -168,6 +168,7 @@ public class theme extends AppCompatActivity {
 
         final RelativeLayout cl = (RelativeLayout) findViewById(R.id.container);
         ImageView init = (ImageView) findViewById(R.id.bg);
+        cl.setBackgroundColor(getResources().getColor(R.color.back));
         init.setImageResource(R.drawable.ic_ui_stock);
         TextView InitText = (TextView) findViewById(R.id.head);
         InitText.setText(R.string.theme_stock);
@@ -177,6 +178,7 @@ public class theme extends AppCompatActivity {
         SubInit.setTextColor(getResources().getColor(R.color.text_sub));
 
         Toolbar toolbar1 = (Toolbar) findViewById(R.id.toolbar4);
+        toolbar1.setBackgroundColor(getResources().getColor(R.color.black));
         setSupportActionBar(toolbar1);
         if (getSupportActionBar() != null) {
             final Drawable upArrow = getResources().getDrawable(R.drawable.ic_arrow_back);
@@ -209,6 +211,7 @@ public class theme extends AppCompatActivity {
         //navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
         final FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.Secd);
+        fab.setBackgroundColor(getThemeAccentColor(this));
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -219,6 +222,7 @@ public class theme extends AppCompatActivity {
         });
 
         FloatingActionButton apply = (FloatingActionButton) findViewById(R.id.apply);
+        apply.setBackgroundColor(getThemeAccentColor(this));
         apply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
