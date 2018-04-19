@@ -34,7 +34,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/black_theme">
+        android:theme="@style/pixel_theme">
         <activity android:name=".Main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,16 +44,14 @@
         </activity>
         <activity
             android:name=".accent"
-            android:theme="@style/black_theme.Dialog" />
+            android:theme="@style/stock_theme.Dialog" />
         <activity
             android:name=".theme"
             android:label="@string/theme" />
         <activity
-            android:name=".display"
-            android:label="@string/display" />
-        <activity
             android:name=".status"
             android:label="@string/status" />
+        <activity android:name=".display"/>
     </application>
 
 </manifest>

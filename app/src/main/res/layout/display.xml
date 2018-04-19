@@ -2,26 +2,27 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
+    android:id="@+id/disp_cont"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.test.display">
+    tools:context="com.psycho.display">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorStock"
+        android:background="@color/colorPrimary"
         android:elevation="4dp"
         android:fitsSystemWindows="true"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:titleTextColor="@android:color/white" />
+        app:title="@string/display" />
 
-    <FrameLayout
-        android:id="@+id/pref"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbar5" />
+        android:layout_below="@id/toolbar5">
+
+    </RelativeLayout>
 
 </RelativeLayout>

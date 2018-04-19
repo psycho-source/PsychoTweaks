@@ -66,6 +66,47 @@
             android:layout_marginTop="4dp"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption" />
 
+        <RelativeLayout
+            android:id="@+id/spin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sub"
+            android:paddingTop="4dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/color1"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/blue_accent_color" />
+
+            <TextView
+                android:id="@+id/choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/color1"
+                android:text="Header Color"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Subtitle"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog"
+                android:layout_below="@id/choose"
+                android:paddingTop="16dp" />
+
+            <RelativeLayout
+                android:id="@+id/color"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/blue_accent_color"
+                android:layout_below="@id/spinner" />
+
+        </RelativeLayout>
+
         <ImageView
             android:id="@+id/bg"
             android:layout_width="match_parent"

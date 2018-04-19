@@ -3,6 +3,7 @@ package com.test;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.TypedArray;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.Drawable;
@@ -35,6 +36,7 @@ public class Main extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         east = 0;
         setContentView(R.layout.main);
+        Context context = getApplicationContext();
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setBackgroundColor(getResources().getColor(R.color.black));
@@ -48,6 +50,13 @@ public class Main extends AppCompatActivity {
         }
 
         final ImageView egg = (ImageView) findViewById(R.id.header1);
+        TypedArray ta = context.getResources().obtainTypedArray(R.array.tint);
+        int[] colors = new int[ta.length()];
+        for (int i = 0; i < ta.length(); i++) {
+            colors[i] = ta.getColor(i, 0);
+        }
+        ta.recycle();
+        egg.setBackgroundColor(colors[2]);
         egg.setOnClickListener(new OnClickListener() {
             public void onClick(View view) {
                 east++;
@@ -90,7 +99,7 @@ public class Main extends AppCompatActivity {
         card3.setOnClickListener(new OnClickListener() {
             public void onClick(View arg0) {
                 Intent myIntent = new Intent(Main.this,
-                        status.class);
+                        display.class);
                 startActivity(myIntent);
             }
         });
@@ -100,7 +109,7 @@ public class Main extends AppCompatActivity {
             public void onClick(View arg0) {
                 final Intent intent = new Intent(Intent.ACTION_MAIN, null);
                 intent.addCategory(Intent.CATEGORY_LAUNCHER);
-                final ComponentName cn = new ComponentName("org.cyanogenmod.cmparts", "org.cyanogenmod.cmparts.input.ButtonSettings");
+                final ComponentName cn = new ComponentName("com.android.settings", "com.android.settings.wifi.WifiSettings");
                 intent.setComponent(cn);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);

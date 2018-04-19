@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="tint">
+        <item>#009688</item>
+        <item>#4285F4</item>
+        <item>#f90028</item>
+    </array>
+</resources>
